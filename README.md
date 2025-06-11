@@ -8,6 +8,15 @@
 
 <br>
 
+<table width="100%">
+  <tr>
+    <td align="left"><b>Documentation First Created On:</b> 2025/06/10</td>
+    <td align="right"><b>Last updated on:</b> 2024/06/11</td>
+  </tr>
+</table>
+
+<br>
+
 **Main Features:**
 
 - **User Registration:** Register new users by storing their personal information—such as `NAME`, `EMAIL`, `PASSWORD`, `ROLE`, and `SECRET_CODE`—in the database (for this project, user data is stored/managed in the `Users_Accounts_Information.csv` file).
