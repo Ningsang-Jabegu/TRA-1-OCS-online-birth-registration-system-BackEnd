@@ -20,13 +20,18 @@
 **Main Features:**
 
 - **User Registration:** Register new users by storing their personal information—such as `NAME`, `EMAIL`, `PASSWORD`, `ROLE`, and `SECRET_CODE`—in the database (for this project, user data is stored/managed in the `Users_Accounts_Information.csv` file).
+
 - **User Authentication:** During login, users provide their email and password. The backend verifies these credentials, determines the user's name and access privileges, and returns the appropriate components the user is authorized to access.
+
 - **User Roles:** The OBRS (Online Birth Registration System) recognizes three roles: `Citizen`, `Guest`, and `Administrator`, each with distinct access privileges:
     - `Citizen`: Can register births and download certificates.
     - `Guest` (Foreigner): Can view public information and, if needed, request a birth certificate.
     - `Administrator`: Has access to manage system records according to organizational permissions. Note: Administrators may have varying levels of access control.
+
 - **Birth Registration:** `Citizens` can register births directly, while `Guests` require special permission to register a child's birth. `Administrators` with the appropriate privileges can `REVIEW`, `MODIFY`, `REJECT`, `HOLD`, or `APPROVE` birth registrations based on organizational criteria and the information submitted by the user through the website.
+
 - **Certificate Verification:** Anyone—including `Citizens`, `Guests`, `Administrators`, or others—can verify a certificate by scanning the QR code on the certificate or by visiting `/verify/cert/[digital certificate number]`.
+
 - **Digital Certificates:** Only `Citizens` and `Guests` (with special permission) can download and print official birth certificates, which include secure QR codes for verification.
 
 <br>
