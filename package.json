@@ -6,13 +6,13 @@
     "Registration",
     "Certificate"
   ],
-  "homepage": "https://github.com/Ningsang-Jabegu/online-birth-registration-system-BackEnd#readme",
+  "homepage": "https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system-BackEnd.git#readme",
   "bugs": {
-    "url": "https://github.com/Ningsang-Jabegu/online-birth-registration-system-BackEnd/issues"
+    "url": "https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system-BackEnd.git/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ningsang-Jabegu/online-birth-registration-system-BackEnd.git"
+    "url": "git+https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system-BackEnd.git"
   },
   "license": "ISC",
   "author": "Ningsang Jabegu",
