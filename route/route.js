@@ -1,6 +1,7 @@
 import fs from 'fs';
 import csv from 'csv-parser';
 import express from 'express';
+import { log } from 'console';
 
 const router = express.Router();
 
@@ -45,15 +46,15 @@ router.post('/api/login', async (req, res) => {
 });
 
 // Register route
+// Register route
 router.post('/api/register', async (req, res) => {
     const { name, email, password, role, secretCode } = req.body;
-
     if (
         !name ||
         !email ||
         !password ||
         !role ||
-        (role === "Administrator" && !secretCode)
+        (role.toLowerCase() === "administrator" && !secretCode)
     ) {
         return res.status(400).json({ error: 'All fields are required.' });
     }
@@ -83,7 +84,7 @@ router.post('/api/register', async (req, res) => {
         }
 
         // For non-admin roles, secretCode should be 0
-        const finalSecretCode = role === "Administrator" ? secretCode : 0;
+        const finalSecretCode = role.toLowerCase() === "administrator" ? secretCode : "0";
 
         // Prepare new user row
         const newRow = `${name},${email},${password},${role},${finalSecretCode}\n`;
