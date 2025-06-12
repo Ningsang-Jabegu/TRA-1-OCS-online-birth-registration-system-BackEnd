@@ -11,7 +11,7 @@
 <table width="100%">
   <tr>
     <td align="left"><b>Documentation First Created On:</b> 2025/06/10</td>
-    <td align="right"><b>Last updated on:</b> 2024/06/11</td>
+    <td align="right"><b>Last updated on:</b> 2024/06/12</td>
   </tr>
 </table>
 
@@ -30,7 +30,7 @@
 
 - **Birth Registration:** `Citizens` can register births directly, while `Guests` require special permission to register a child's birth. `Administrators` with the appropriate privileges can `REVIEW`, `MODIFY`, `REJECT`, `HOLD`, or `APPROVE` birth registrations based on organizational criteria and the information submitted by the user through the website.
 
-- **Certificate Verification:** Anyone—including `Citizens`, `Guests`, `Administrators`, or others—can verify a certificate by scanning the QR code on the certificate or by visiting `/verify/cert/[digital certificate number]`.
+- **Certificate Verification:** Anyone—including `Citizens`, `Guests`, `Administrators`, or others—can verify a certificate by scanning the QR code on the certificate or by visiting `/certificate-verification/[digital certificate number]`.
 
 - **Digital Certificates:** Only `Citizens` and `Guests` (with special permission) can download and print official birth certificates, which include secure QR codes for verification.
 
