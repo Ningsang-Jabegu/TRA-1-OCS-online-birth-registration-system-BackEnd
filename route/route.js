@@ -48,11 +48,12 @@ router.post('/api/login', async (req, res) => {
 // Register route
 // Register route
 router.post('/api/register', async (req, res) => {
-    const { name, email, password, role, secretCode } = req.body;
+    const { name, email, password, salt, role, secretCode } = req.body;
     if (
         !name ||
         !email ||
         !password ||
+        !salt ||
         !role ||
         (role.toLowerCase() === "administrator" && !secretCode)
     ) {
@@ -60,7 +61,7 @@ router.post('/api/register', async (req, res) => {
     }
 
     const csvFilePath = './db/Users_Accounts_Information.csv';
-    const headers = 'NAME,EMAIL,PASSWORD,ROLE,SECRET_CODE\n';
+    const headers = 'NAME,EMAIL,PASSWORD(hash),SALT,ROLE,SECRET_CODE\n';
 
     try {
         // Check if user already exists
@@ -87,7 +88,7 @@ router.post('/api/register', async (req, res) => {
         const finalSecretCode = role.toLowerCase() === "administrator" ? secretCode : "0";
 
         // Prepare new user row
-        const newRow = `${name},${email},${password},${role},${finalSecretCode}\n`;
+        const newRow = `${name},${email},${password},${salt},${role},${finalSecretCode}\n`;
 
         // If file doesn't exist, write headers first
         if (!fs.existsSync(csvFilePath)) {
