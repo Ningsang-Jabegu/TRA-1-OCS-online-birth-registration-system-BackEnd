@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"  # Specific day for weekly updates
+      time: "10:00"  # Specific time for updates (in local time)
+      timezone: "Asia/Kathmandu"  # Timezone for the specified time
+    labels:
+      - "dependencies"
+      - "npm"
+    assignees:
+      - "dependabot[bot]"
+    reviewers:
+      - "dependabot[bot]"
