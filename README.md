@@ -11,7 +11,7 @@
 <table width="100%">
   <tr>
     <td align="left"><b>Documentation First Created On:</b> 2025/06/10</td>
-    <td align="right"><b>Last updated on:</b> 2024/06/12</td>
+    <td align="right"><b>Last updated on:</b> 2024/06/13</td>
   </tr>
 </table>
 
@@ -33,6 +33,8 @@
 - **Certificate Verification:** Anyone—including `Citizens`, `Guests`, `Administrators`, or others—can verify a certificate by scanning the QR code on the certificate or by visiting `/certificate-verification/[digital certificate number]`.
 
 - **Digital Certificates:** Only `Citizens` and `Guests` (with special permission) can download and print official birth certificates, which include secure QR codes for verification.
+
+- **Hashed Passwords:** User passwords are securely stored in the database as hashes, each with a unique salt value for enhanced security. This project uses `bcryptjs`, a widely adopted password hashing library, to ensure robust and reliable password protection.
 
 <br>
 
