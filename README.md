@@ -24,9 +24,12 @@
 - **User Authentication:** During login, users provide their email and password. The backend verifies these credentials, determines the user's name and access privileges, and returns the appropriate components the user is authorized to access.
 
 - **User Roles:** The OBRS (Online Birth Registration System) recognizes three roles: `Citizen`, `Guest`, and `Administrator`, each with distinct access privileges:
-    - `Citizen`: Can register births and download certificates.
-    - `Guest` (Foreigner): Can view public information and, if needed, request a birth certificate.
-    - `Administrator`: Has access to manage system records according to organizational permissions. Note: Administrators may have varying levels of access control.
+
+  - `Citizen`: Can register births and download certificates.
+  - `Guest` (Foreigner): Can view public information and, if needed, request a birth certificate.
+  - `Administrator`: Has access to manage system records according to organizational permissions. Note: Administrators may have varying levels of access control.
+
+- **Rate Limiter Middleware:** To prevent abuse and ensure fair access, the server monitors requests to `/api/register` and `/api/login` from the same IP address and device. If more than 15 attempts are made within a 15-minute window, the service is temporarily blocked for that user, helping to protect against DDoS attacks and maintain system availability for others.
 
 - **Birth Registration:** `Citizens` can register births directly, while `Guests` require special permission to register a child's birth. `Administrators` with the appropriate privileges can `REVIEW`, `MODIFY`, `REJECT`, `HOLD`, or `APPROVE` birth registrations based on organizational criteria and the information submitted by the user through the website.
 
@@ -38,7 +41,7 @@
 
 <br>
 
-*This repository contains the backend code powering the above features. For frontend code please visit [TRA-1-OCS-online-birth-registration-system](https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system.git)*
+_This repository contains the backend code powering the above features. For frontend code please visit [TRA-1-OCS-online-birth-registration-system](https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system.git)_
 
 <br>
 
@@ -64,33 +67,33 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**
 
-    ```bash
-    git clone https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system-BackEnd.git
+   ```bash
+   git clone https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system-BackEnd.git
 
-    cd TRA-1-OCS-online-birth-registration-system-backend
-    ```
+   cd TRA-1-OCS-online-birth-registration-system-backend
+   ```
 
 2. **Install Dependencies**
 
-    ```bash
-    npm i
-    ```
+   ```bash
+   npm i
+   ```
 
 3. **Configure Environment Variables**
 
-    - Copy `.env.example` to `.env` and update values as needed. (There is no any `.env` file created till now for this project, if required I will update this file too.)
+   - Copy `.env.example` to `.env` and update values as needed. (There is no any `.env` file created till now for this project, if required I will update this file too.)
 
 4. **Run the Application**
 
-    ```bash
-    npm run server
-    ```
+   ```bash
+   npm run server
+   ```
 
-    The backend server will start, typically at `http://localhost:3000`.
+   The backend server will start, typically at `http://localhost:3000`.
 
 5. **API Documentation**
 
-    - Visit `/api/docs` for interactive API documentation. (In progress)
+   - Visit `/api/docs` for interactive API documentation. (In progress)
 
 ---
 
