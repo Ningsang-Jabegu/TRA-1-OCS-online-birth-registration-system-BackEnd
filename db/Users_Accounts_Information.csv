@@ -1,4 +1,3 @@
-NAME,EMAIL,PASSWORD(hash),SALT,ROLE,SECRET_CODE
-Saroj Angdembe,subrazlimbu9@gmail.com,$2b$10$NZBb3LcJcmxY6j0XVLJ7EOiRpyPm7ZTRnUPqBz/OtkUa68wJmw15m,$2b$10$NZBb3LcJcmxY6j0XVLJ7EO,Guest,0
-Ningsang Jabegu,ningsanglimbu5203@gmail.com,$2b$10$tOqhZtlZP.zOV7XZGorTI.UKg0XmKVZcgfUYMr6voJkGRR8i/vAmO,$2b$10$tOqhZtlZP.zOV7XZGorTI.,Administrator,999A
-Anjana Baraili,anjana@example.com,$2b$10$v/Bc6MWnimTjMNPuCo3zBeJXsL0A1mfeh4XHQVS.rTPnsvxLbhNy.,$2b$10$v/Bc6MWnimTjMNPuCo3zBe,Guest,0
+ID,NAME,EMAIL,PASSWORD_hash,SALT,PHONE,ADDRESS,ROLE,SECRET_CODE,_9
+administrator-1756730772017-1,Ningsang Jabegu,ningsanglimbu5203@gmail.com,$2b$10$4vmNh6QJnoVoQROlXTN6COFJkTuC88/bzoel7pF.BUXym3fZRIbye,$2b$10$4vmNh6QJnoVoQROlXTN6CO,9806060663,Phidim 1 Panchthar, Nepal,Administrator
+citizen-1756737101300-9,Poonam Limbu,citizen@brc.gov.np,$2b$10$po83J.VJfgxOpxGMY54B3.OL8G61mxrp8q1hwP0Vx92kqz429RwJy,$2b$10$po83J.VJfgxOpxGMY54B3.,9745477122,Phidim 1 Panchthar, Nepal,Citizen

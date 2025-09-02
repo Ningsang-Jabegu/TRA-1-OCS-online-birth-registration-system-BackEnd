@@ -89,7 +89,7 @@ Ensure you have the following installed:
    npm run server
    ```
 
-   The backend server will start, typically at `http://localhost:3000`.
+   The backend server will start, typically at `http://localhost:5000`.
 
 5. **API Documentation**
 

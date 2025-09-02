@@ -17,7 +17,7 @@ app.use(cors({
 // Helper function to create rate limiters with custom messages
 const createLimiter = (type) => rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 10, // limit each IP to 10 requests per windowMs
+    max: 30, // limit each IP to 30 requests per windowMs
     message: `Too many ${type} attempts from this IP, please try again later.`,
     keyGenerator: (req) => {
         return req.ip + '-' + req.headers['user-agent'];
@@ -30,6 +30,7 @@ const registerLimiter = createLimiter('registration');
 // Apply the rate limiting middleware to the login and register routes
 app.use('/api/login', loginLimiter);
 app.use('/api/register', registerLimiter);
+app.use('/api/reset-password', registerLimiter);
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -38,7 +39,7 @@ app.use(express.json());
 app.use('/', router);
 
 // Define the port number
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Start the server
 app.listen(PORT, () => {
