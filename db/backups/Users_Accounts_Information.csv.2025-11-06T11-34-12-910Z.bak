@@ -1,0 +1,4 @@
+ID,NAME,EMAIL,PASSWORD_hash,SALT,PHONE,ADDRESS,ROLE,SECRET_CODE,_9
+administrator-1756730772017-1,Ningsang Jabegu (Limbu),ningsanglimbu5203@gmail.com,$2b$10$kNXdqUvAwfan1o8JOHNuS.poTGXivKMLS9t7UR5Fp3A64f0Msn17.,$2b$10$kNXdqUvAwfan1o8JOHNuS.,9806060663,Phidim 10,Administrator, 999A, Nepal
+citizen-1756737101300-9,Poonam Limbu,citizen@brc.gov.np,$2b$10$1adx/8XGDT4Pn7ufRBnrGuBsV3dgA6NaJWtEJ6kYA0a4aCh1gMnMK,$2b$10$1adx/8XGDT4Pn7ufRBnrGu,9745477122,Phidim 1 Panchthar - Nepal,Citizen
+guest-1757666350174-8,Parash Khadka,guest@brc.gov.np,$2b$10$0yZ4KONXHWExAcHC7JWGO.eouo.I2YwPm6g3/W1n./pjqVycevsoi,$2b$10$0yZ4KONXHWExAcHC7JWGO.,9876543210,Phidim 1 Panchthar- Nepal,Guest
