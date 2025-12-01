@@ -9,10 +9,10 @@
 <br>
 
 <table width="100%">
-  <tr>
-    <td align="left"><b>Documentation First Created On:</b> 2025/06/10</td>
-    <td align="right"><b>Last updated on:</b> 2024/06/14</td>
-  </tr>
+   <tr>
+      <td align="left"><b>Documentation First Created On:</b> 2025/06/10</td>
+      <td align="right"><b>Last updated on:</b> 2025/12/1</td>
+   </tr>
 </table>
 
 <br>
@@ -41,7 +41,11 @@
 
 <br>
 
-_This repository contains the backend code powering the above features. For frontend code please visit [TRA-1-OCS-online-birth-registration-system](https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system.git)_
+_This repository contains the backend code powering the above features._
+
+**Updated code and combined FullStack repository:** For the latest updates and the complete FullStack project, please visit: https://github.com/Ningsang-Jabegu/TRA-1-OCS-online-birth-registration-system-FullStack.git
+
+**Deprecation Notice:** Last updated on: 2025/12/1. This repository will no longer be updated starting from 2025/12/1. Please refer to the FullStack repository linked above for future changes.
 
 <br>
 
